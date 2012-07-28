@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.description = "Drive a traffic light with an Arduino."
   s.email = "rubygems@ledez.net"
   s.extra_rdoc_files = ["README.rdoc", "lib/traffic_light.rb"]
-  s.files = ["Arduino/traffic_light/traffic_light.ino", "Guardfile", "Manifest", "README.rdoc", "Rakefile", "lib/traffic_light.rb", "spec/spec_helper.rb", "spec/traffic_light_spec.rb", "traffic_light.gemspec"]
+  s.files = ["Arduino/traffic_light/traffic_light.ino", "Guardfile", "README.rdoc", "Rakefile", "lib/traffic_light.rb", "spec/spec_helper.rb", "spec/traffic_light_spec.rb", "Manifest", "traffic_light.gemspec"]
   s.homepage = "http://github.com/nledez/traffic_light"
   s.rdoc_options = ["--line-numbers", "--inline-source", "--title", "Traffic_light", "--main", "README.rdoc"]
   s.require_paths = ["lib"]
