@@ -6,6 +6,12 @@ Ruby gem to pilot a traffic light build with an Arduino.
 
   gem install traffic_light
 
+  Load Arduino/traffic_light/traffic_light.ino into your Arduino.
+
+  Plug # color -> on pin #
+  Red    -> 11
+  Orange -> 12
+  Green  -> 10
 
 == Usage
 
