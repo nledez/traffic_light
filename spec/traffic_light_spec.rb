@@ -12,7 +12,7 @@ describe "Can change light colors" do
 
   it "Set green" do
     @traffic.green
-    @traffic.message.should == "1 -> --G"
+    @traffic.message.should == "1 -> G--"
   end
 
   it "Set orange" do
@@ -22,26 +22,26 @@ describe "Can change light colors" do
 
   it "Set red" do
     @traffic.red
-    @traffic.message.should == "4 -> R--"
+    @traffic.message.should == "4 -> --R"
   end
 
   it "Set green & orange" do
     @traffic.green_orange
-    @traffic.message.should == "3 -> -OG"
+    @traffic.message.should == "3 -> GO-"
   end
 
   it "Set green & red" do
     @traffic.green_red
-    @traffic.message.should == "5 -> R-G"
+    @traffic.message.should == "5 -> G-R"
   end
 
   it "Set orange & red" do
     @traffic.orange_red
-    @traffic.message.should == "6 -> RO-"
+    @traffic.message.should == "6 -> -OR"
   end
 
   it "Set all light" do
     @traffic.all
-    @traffic.message.should == "7 -> ROG"
+    @traffic.message.should == "7 -> GOR"
   end
 end
