@@ -13,7 +13,18 @@ class TrafficLight
     @sp = SerialPort.new(@port_str, @baud_rate, @data_bits, @stop_bits, @parity)
     @sp.read_timeout = 1000
 
+    @opened = true
+
     clear
+  end
+
+  def open?
+    @opened
+  end
+
+  def close!
+    @sp.close
+    @opened = false
   end
 
   def read

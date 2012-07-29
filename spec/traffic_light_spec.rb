@@ -44,4 +44,10 @@ describe "Can change light colors" do
     @traffic.all
     @traffic.message.should == "7 -> GOR"
   end
+
+  it "Close socket" do
+    @traffic.open? == true
+    @traffic.close!
+    @traffic.open? == false
+  end
 end
